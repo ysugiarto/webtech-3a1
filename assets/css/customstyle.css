@@ -1,0 +1,23 @@
+.rpl-header-logo {
+    width: 50px;
+}
+
+.rpl-bg-header {
+    background-color: rgb(20, 73, 147);
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#hero {
+    background-image: url("../img/head-bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    color: azure;
+}
+
+.rpl-logo {
+    margin-top: 20px;
+}

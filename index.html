@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>My Company</title>
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/customstyle.css">
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script>
+        function fungsiTest(){
+            a = 3;
+            for(i=0; i<a; i++){
+                //console.log("Test " + (i+1));
+                window.alert("Test " + (i+1));
+            }
+
+            input=window.prompt("Masukkan input:");
+            changeText(input);
+        }
+
+        function changeText(par) {
+            servicesection = document.getElementById("service");
+            servicesection.innerHTML = par;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark rpl-bg-header">
+            <a class="navbar-brand" href="#">
+                <img class="rpl-header-logo" src="assets/img/logo.png">
+                My Company
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Welcome to Our Webpage!</h1>
+                    <p>Sed est turpis, mattis non erat ut, luctus ultricies felis. Cras ultrices aliquet magna, tempor
+                        blandit turpis venenatis sit amet. Vivamus et mollis ipsum, id dapibus justo.</p>
+                    <a class="btn btn-primary" onclick="fungsiTest()" href="#">More &raquo;</a>
+                </div>
+                <div class="col-sm-4">
+                    <img class="rpl-logo" src="assets/img/logo.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <?php
+        $a = 100;
+        $b = 23;
+
+        echo "Output: " . $a+$b;
+
+    ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="service">Service</section>
+    <section id="about">About</section>
+    <section id="contact">Contact</section>
+    <footer id="footer">
+       Footer
+    </footer>
+
+
+</body>
+
+</html>
